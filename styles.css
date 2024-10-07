@@ -40,4 +40,14 @@ body {
     grid-row: 2 / 3;
 }
 
+.proj-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
 
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
