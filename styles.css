@@ -2,6 +2,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr;
+    margin: 0;
 }
 
 .sidebar{
@@ -14,15 +15,40 @@ body {
 }
 .header{
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    border: 8px solid white;
 }
+
+.header-left{
+    display: flex;
+    gap: 8px;
+}
+.header-right{
+    display: flex;
+    gap: 8px;
+}
+
 .taskbar{
     grid-row: 2 / 3;
+    border: 8px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+.taskbar-left{
+    display: flex;
+    gap: 8px;
+}
+.taskbar-right{
+
 }
 .content{
     grid-row: 3 / 4;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: #e2e8f0;
+    border: 16px solid #e2e8f0;
 }
 
 .projects{
@@ -50,4 +76,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    background-color: #1992d4;
+    color: white;
+    border: 16px solid #1992d4;
+}
+.project{
+    background-color: white;
+    margin: 16px;
+}
+
+.announce-box{
+    background-color: white;
+}
+.trend-box {
+    background-color: white;
 }
