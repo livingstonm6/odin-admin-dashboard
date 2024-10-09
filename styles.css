@@ -11,13 +11,23 @@ body {
 
 .main{
     display: grid;
-    grid-template-rows: 1fr 1fr 10fr;
+    grid-template-rows: 2fr 10fr;
+    background-color: #e2e8f0;
+    gap: 8px;
 }
+
+.main-top{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
 .header{
     grid-row: 1 / 2;
     display: flex;
     justify-content: space-between;
     border: 8px solid white;
+    background-color: white;
 }
 
 .header-left{
@@ -34,6 +44,8 @@ body {
     border: 8px solid white;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 8px 8px -8px black;
+    background-color: white;
 }
 .taskbar-left{
     display: flex;
@@ -43,7 +55,7 @@ body {
 
 }
 .content{
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -54,6 +66,7 @@ body {
 .projects{
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    margin: 16px;
 }
 
 .announcements{
@@ -70,6 +83,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
 }
 
 .sidebar{
@@ -82,7 +96,6 @@ body {
 }
 .project{
     background-color: white;
-    margin: 16px;
 }
 
 .announce-box{
@@ -90,4 +103,8 @@ body {
 }
 .trend-box {
     background-color: white;
+}
+
+.project{
+    border-left: 8px solid #e3b030;
 }
