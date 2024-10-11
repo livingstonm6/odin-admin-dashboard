@@ -3,6 +3,9 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr;
     margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .sidebar{
